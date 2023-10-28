@@ -1,22 +1,14 @@
-# Reinforcement Learning for GitHub Pull Request Predictions: Analyzing Development Dynamics
+# Comparative Study of Reinforcement Learning in GitHub Pull Request Outcome Predictions
 
-Part of Master of Applied Science: Electrical and Computer Engineering degree at Carleton University, Ottawa, Canada. 
+Part of Master of Applied Science: Electrical and Computer Engineering degree at ##### University, Canada. 
 
-In the rapidly changing software development field, the pull-based model, supported by tools like GitHub, plays a pivotal role in collaborations. Understanding factors influencing this model is crucial for process enhancement. This thesis employs two Reinforcement Learning (RL) formalizations to predict Pull Request (PR) outcomes. The first utilizes 72 PR characteristics (e.g., PR Size, Test Inclusion, Developers’ PR Experience, Programming Language), achieving a G-mean of 0.82664. The second focuses solely on PR discussions, attaining a higher G-mean of 0.88372. Both RL models outperform established techniques like Random Forest, XGBoost, and Naive Bayes. Additionally, the study explores PR factors and merge time through a survey of 22 developers, identifying key influencers such as PR size and reviewer experience, while also revealing common PR review approaches. Concluding, the study outlines achievements, future directions, and establishes an RL-based PR outcome prediction framework, along with publishing specific datasets.
+In the rapidly evolving field of software development, pull-based development models, facilitated by tools such as GitHub, are essential for collaboration. This study explores factors that influence pull request (PR) outcomes and employs two Reinforcement Learning (RL) formalizations, modeled as Markov Decision Processes, for PR outcome prediction. The first model leverages 72 PR characteristics and achieves a G-mean score of 0.82664, while the second focuses solely on PR discussions, resulting in a G-mean of 0.88372. Using a specially designed reward function, these RL formalizations strategically address data imbalance and excel in mimicking both single-stage and multi-stage PR review processes. They outperform baseline models (Random Forest, XGBoost, and a Naive Bayes baseline) across various data splits—namely 80/20, 50/50, and 20/80—and are particularly effective at predicting PR rejections. The study also provides specific datasets for future research.
 
-## Dataset for RL Formalization 1 (Holistic approach to PR characteristics):
-Source: X. Zhang, Y. Yu, G. Georgios, and A. Rastogi, “Pull request decisions explained: An empirical overview,” IEEE Transactions on Software Engineering, pp. 1–1, 2022.
-
-Link to data: https://zenodo.org/record/4837135#.YLEWyY3isdW
-
-## Dataset for RL Formalization 2 (PR Dicussions along with Sentiment Analysis):
-Sentiment Analysis tool: https://github.com/cjhutto/vaderSentiment
-
-Source (Sentiment Analysis): C. Hutto and E. Gilbert, “VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text”, ICWSM, vol. 8, no. 1, pp. 216-225, May 2014.
+## Dataset for BatchRL and ChatRL:
 
 Link to data: https://zenodo.org/record/8271704
 
-## RL Formalization 1
+## RL Formalization 1 (BatchRL)
 RL Models: DQN, A2C, PPO
 
 Custom RL Environemnt: PR ENV
@@ -27,7 +19,7 @@ ROS: Random Over-Sampling
 
 RUS: Random Under-Sampling
 
-## RL Formalization 2
+## RL Formalization 2 (ChatRL)
 RL Models: DQN
 
 Custom RL Environemnt: PR ENV
