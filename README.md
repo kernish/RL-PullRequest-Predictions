@@ -6,7 +6,7 @@ In the rapidly evolving field of software development, pull-based development mo
 
 ## Dataset for BatchRL and ChatRL:
 
-Link to data: https://zenodo.org/record/8271704
+Link to data: [https://zenodo.org/record/8271704](https://zenodo.org/records/10049493)
 
 ## RL Formalization 1 (BatchRL)
 RL Models: DQN, A2C, PPO
